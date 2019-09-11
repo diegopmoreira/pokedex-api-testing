@@ -4,9 +4,9 @@
   "description": "Project to show tests in a API",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha",
-    "test-integration": "./node_modules/mocha/bin/mocha test/pokemon_get.js",
-    "test-contract": "./node_modules/mocha/bin/mocha test/pokemon_contract.js"
+    "test": "node node_modules/mocha/bin/mocha test/**/*.js",
+    "test-integration": "node node_modules/mocha/bin/mocha test/get/*.js",
+    "test-contract": "node node_modules/mocha/bin/mocha test/contracts/*.js"
   },
   "author": "Diego Moreira",
   "license": "ISC",
